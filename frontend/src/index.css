@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0D10;
+    color: #F3F4F6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom Utilities for GymOS design system */
+.bg-dark-base {
+  background-color: #0B0D10;
+}
+
+.bg-dark-surface {
+  background-color: #14171F;
+}
+
+.bg-dark-card {
+  background-color: #1A1E29;
+}
+
+.bg-dark-elevated {
+  background-color: #242938;
+}
+
+.border-dark-border {
+  border-color: #272D3D;
+}
+
+.text-accent-lime {
+  color: #B5F800;
+}
+
+.bg-accent-lime {
+  background-color: #B5F800;
+}
+
+.border-accent-lime {
+  border-color: #B5F800;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D10;
+}
+::-webkit-scrollbar-thumb {
+  background: #272D3D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B4359;
+}
